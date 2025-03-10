@@ -1,0 +1,52 @@
+site_name: ride-price-prediction
+repo_url: https://github.com/minhquana1906/ride-price-prediction
+site_url: https://minhquana1906.github.io/ride-price-prediction
+site_description: This is a simple project to predict fares of rides based on given information to assist in booking rides.
+site_author: minhquana1906
+edit_uri: edit/main/docs/
+repo_name: minhquana1906/ride-price-prediction
+copyright: Maintained by <a href="https://minhquana1906.com">minhquana1906</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["ride_price_prediction"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/minhquana1906/ride-price-prediction
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/ride-price-prediction
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
